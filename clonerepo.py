@@ -117,9 +117,9 @@ def run_script():
         # Temporary path to clone the repository
         temp_repo_path = "/content/temp_Mangio-RVC-Fork"
         # Clone the latest code from the Mangio621/Mangio-RVC-Fork repository to a temporary location
-        run_cmd(f"git clone https://github.com/jasonliu234/Retrieval-based-Voice-Conversion-WebUI.git {temp_repo_path}")
+        run_cmd(f"git clone https://github.com/jasonliu234/Mangio-Kalo-Tweaks.git {temp_repo_path}")
         os.chdir(temp_repo_path)
-        run_cmd("wget https://github.com/jasonliu234/Retrieval-based-Voice-Conversion-WebUI/gui_v1.py")
+        run_cmd("wget https://github.com/777gt/EasyGUI-RVC-Fork/raw/main/EasierGUI.py")
 
         # Edit the file here, before copying
         edit_file(f"{temp_repo_path}/infer-web.py")
